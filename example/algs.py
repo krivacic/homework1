@@ -12,7 +12,10 @@ def bubblesort(x):
     Describe how you are sorting `x`
     """
 
+<<<<<<< HEAD
     assert 1 == 1
+=======
+
     return x
 
 def quicksort(x):
@@ -20,6 +23,9 @@ def quicksort(x):
     Describe how you are sorting `x`
     """
 
+<<<<<<< HEAD
     assert 1 == 1
+=======
+
     return
 

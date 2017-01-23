@@ -1,7 +1,10 @@
 # example
 
 [![Build
+<<<<<<< HEAD
 Status](https://travis-ci.org/krivacic/example.svg?branch=master)](https://travis-ci.org/krivacic/example)
+=======
+
 
 Example python project with testing.
 
