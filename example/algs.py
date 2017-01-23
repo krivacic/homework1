@@ -13,9 +13,8 @@ def bubblesort(x):
     """
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     assert 1 == 1
-=======
-
     return x
 
 def quicksort(x):
@@ -24,8 +23,8 @@ def quicksort(x):
     """
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     assert 1 == 1
-=======
 
     return
 
