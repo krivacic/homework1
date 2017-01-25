@@ -1,10 +1,7 @@
 # example
 
 [![Build
-<<<<<<< HEAD
-<<<<<<< HEAD
-Status](https://travis-ci.org/krivacic/example.svg?branch=master)](https://travis-ci.org/krivacic/example)
-
+Status](https://travis-ci.org/ucsf-bmi-203-2017/example.svg?branch=master)](https://travis-ci.org/ucsf-bmi-203-2017/example)
 
 Example python project with testing.
 

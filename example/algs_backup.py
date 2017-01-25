@@ -34,53 +34,43 @@ def quicksort(x):
     """
     Describe how you are sorting `x`
     """
-    con = 0
-    asn = 0
+
 # Quicksort input function to tell initial values of p and r. Initial pivot point is in the middle of the array.
     def quicksortinput(x):
-       quicksort(x,0,len(x)-1)
+       quickSortHelper(x,0,len(x)-1)
 
 # Recursive quicksort function, partitions the array and then quicksorts each partition.
-    def quicksort(x,p,r):
+    def quickSortHelper(x,p,r):
        if p < r:
-           con = con + 1
 
            pivot = partition(x,p,r)
-           asn = asn + 1
 
-           quicksort(x,p,pivot-1)
-           quicksort(x,pivot+1,r)
+           quickSortHelper(x,p,pivot-1)
+           quickSortHelper(x,pivot+1,r)
 
 # Partition function: finds pivot value, defines the left value as the one directly above pivot value, and compares this to the right value.
     def partition(x,p,r):
        pivotval = x[p]
+
        left = p + 1
        right = r
-# While left <= right:
-       while left <= right:
-           con = con + 1
-           #move left up until you reach a value that is less than the pivot value
-           while x[left] <= pivotval:
-               con = con + 1
-               left = left + 1
-               asn = asn + 1
-            #move right down until you reach a value that is greater than the pivot value
-           while x[right] > pivotval:
-               con = con + 1
-               right = right -1
-               asn = asn + 1
-               # swap left and right
+# While left < right, if the value left is less than the value of right, swap left and right. Otherwise go to the next item in the array.
+       while left < right:
            if left < right:
-             con = con + 1
-             t = x[right]
-             x[right] = x[left]
-             x[left] = t
-             asn = asn + 3
-        # swap pivot value and right
+               t = x[right]
+               x[right] = x[left]
+               x[left] = t
+           while left <= right and x[left] <= pivotval:
+               left = left + 1
+
+           while x[right] >= pivotval and right >= left:
+               right = right -1
+
        t = x[p]
        x[p] = x[right]
        x[right] = t
-       asn = asn + 3
-       # return right for use as new pivot value
+
        return right
+
+    quicksortinput(x)
     return x

@@ -20,15 +20,16 @@ def test_bubblesort():
     # think about: (1) does your code handle 0-element arrays without
     # failing, (2) does your code handle characters?
 
-    x = np.array([1,2,4,0,1])
-    
+    x = np.array([1,2,3,4,5])
+
+    # for integers: x = np.random.randint(10000, size = (100))
     # for now, just attempt to call the bubblesort function, should
     # actually check output
     algs.bubblesort(x)
 
 def test_quicksort():
 
-    x = np.array([1,2,4,0,1])
+    x = np.array([1,2,3,4,5])
     # for now, just attempt to call the quicksort function, should
     # actually check output
     algs.quicksort(x)
